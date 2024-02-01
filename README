@@ -1,0 +1,5 @@
+Bulding and packaging rust code to web assembly:
+wasm-pack build --target web
+
+Starting the server: 
+python3 -m http.server

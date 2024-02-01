@@ -21,7 +21,7 @@ impl Game {
             velocity: 0.0,
             gravity: 0.1,
             obstacles: Vec::new(),
-            frames_since_last_obstacle: 0, // Initialize the counter
+            frames_since_last_obstacle: 0, 
             state: GameState::Playing,
             canvas_height:600.0,
             score:0,
@@ -62,7 +62,7 @@ impl Game {
         if let Some(obstacle) = self.obstacles.get(index) {
             return serde_wasm_bindgen::to_value(obstacle).unwrap_or(JsValue::UNDEFINED);
         }
-        JsValue::UNDEFINED // Use UNDEFINED for better clarity in error handling
+        JsValue::UNDEFINED 
     }
 
     pub fn update(&mut self) -> bool {
