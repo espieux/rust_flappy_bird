@@ -1,3 +1,9 @@
+Install rust
+$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+
+Install wasm-pack
+cargo install wasm-pack
+
 Bulding and packaging rust code to web assembly:
 wasm-pack build --target web
 
