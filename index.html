@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rust Flappy Bird</title>
+    <style>
+        #scoreDisplay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #ce1919;
+            font-size: 24px;
+            z-index: 10;
+        }
+    </style>
+    <style>
+        #gameOverScreen {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            color: #010101;
+            font-size: 50px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="scoreDisplay">Score: 0</div>
+    <div id="gameOverScreen" style="display:none;">
+        <p>Game Over!</p>
+        <button id="tryAgainButton">Try Again</button>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
