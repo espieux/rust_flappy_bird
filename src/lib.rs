@@ -91,7 +91,7 @@ impl Game {
 
         // Add a new obstacle every 120 frames (adjust based on your game's speed and difficulty)
         if self.frames_since_last_obstacle >= 120 {
-            self.add_obstacle(800.0, 200.0, 150.0); // Example values; adjust as needed
+            self.add_obstacle(800.0, 200.0, 150.0);
             self.frames_since_last_obstacle = 0;
         }
         // Check for collisions with obstacles
